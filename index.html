@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Changer App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Color Changer</h1>
+      <button class="copy-btn">Copy Color</button>
+      <input type="color" id="color-picker" />
+      <div class="inputBtnContainer">
+        <button class="random-btn">Random color</button>
+        <input
+          id="color-input"
+          type="text"
+          placeholder="Enter a color name or Hex value"
+        />
+        <button class="apply-btn">Apply color</button>
+      </div>
+      <p class="current-color">
+        Current Color:
+        <span class="current-color-value">rgb(232, 223, 213)</span>
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

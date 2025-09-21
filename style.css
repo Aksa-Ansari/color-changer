@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  padding: 40px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inputBtnContainer {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  background: linear-gradient(135deg, lightseagreen, teal);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+}
+
+#color-input, #color-picker {
+  padding: 10px;
+  border: 2px solid lightseagreen;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.current-color {
+  margin-top: 20px;
+  font-size: 18px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+@media(max-width: 600px){
+    .container{
+        padding: 20px;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .button{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
